@@ -1,0 +1,285 @@
+:root{
+    --white-color: hsl(0, 0%, 100%);
+    --stone-color-100:  hsl(30, 54%, 90%);
+    --stone-color-150:  hsl(30, 18%, 87%);
+    --stone-color-600:  hsl(30, 10%, 34%);
+    --stone-color-900:  hsl(24, 5%, 18%);
+    --brown-color-800:  hsl(14, 45%, 36%);
+    --rose-color-800:   hsl(332, 51%, 32%);
+    --rose-50:  hsl(330, 100%, 98%);
+    --young-serif-font-family: "Young Serif", serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: var(--stone-color-100);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--stone-color-600);
+}
+.simple-omelette-recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    width: 25%;
+    margin: 10rem;
+    border-radius: 10px;
+}
+/*! Photo-side */
+.omelette-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.omelette-photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*! omelette beginning side  */
+.omelette-beginning-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 95%;
+}
+.omelette-beginning-text h1{
+    font-family: var(--young-serif-font-family);
+    margin-left: 1.6rem;
+    font-weight: 400;
+    color: var(--stone-color-900);
+}
+.omelette-beginning-text p{
+    display: flex;
+    padding-left: 1.6rem;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+/* preparation-time start */
+.preparation-time{
+    background-color: var(--rose-50);
+    width: 95%;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    height: auto;
+    border-radius: 10px;
+}
+.preparation-time h3{
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+    color: var(--rose-color-800);
+}
+.preparation-time ul{
+    margin-left: 2.6rem;
+    padding-bottom: 1.6rem;
+    gap: 1rem;
+}
+.preparation-time li{
+    font-size: 0.76rem;
+    margin-top: 0.8rem;
+}
+.preparation-time li::marker{
+    color: var(--rose-color-800);
+    font-size: 0.5rem;
+}
+.preparation-time span{
+    position: relative;
+    left: 1.2rem;
+    font-weight:400;
+}
+/*! ingerdients start*/
+.ingerdients{
+    display: flex;
+    width: 88%;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    height: auto;
+    border-bottom: solid var(--stone-color-150);  
+    border-bottom-width: .1px;
+}
+.ingerdients h2{
+    font-family: var(--young-serif-font-family);
+    margin-left: 0rem;
+    font-weight: 400;
+    color: var(--brown-color-800);
+    font-size: 1.45rem;
+}
+.ingerdients ul{
+    margin-left: 1rem;
+    padding-bottom: 1.6rem;
+    gap: 1rem;
+}
+.ingerdients li{
+    font-size: 0.76rem;
+    margin: none;
+    margin-top: 0.8rem;
+
+}
+.ingerdients li::marker{
+    color: var(--brown-color-800);
+    font-size: 0.5rem;
+
+}
+.ingerdients span{
+    position: relative;
+    left: 1rem;
+}
+/*! instructions start  */
+.instructions{
+    display: flex;
+    width: 88%;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding-top: 1.6rem;
+    height: auto;
+    border-bottom: .1px solid var(--stone-color-150);  
+}
+.instructions h2{
+    font-family: var(--young-serif-font-family);
+    margin-left: 0rem;
+    font-weight: 400;
+    color: var(--brown-color-800);
+    font-size: 1.45rem;
+}
+.instructions ol{
+    margin-left: 1.2rem;
+    padding-bottom: 1.6rem;
+    gap: 1rem;
+    margin-right: 1.2rem;
+}
+.instructions li{
+    font-size: 0.76rem;
+    margin: none;
+    margin-top: 0.8rem;
+}
+.instructions li::marker{
+    color: var(--brown-color-800);
+    font-size: 0.8rem;
+    font-family: "Outfit", sans-serif;
+}
+.instructions span{
+    position: relative;
+    left: 1rem;
+}
+/*! nutrition start */
+.nutrition{
+    display: flex;
+    width: 88%;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding-top: 1.6rem;
+    height: auto;
+}
+.nutrition h2{
+    font-family: var(--young-serif-font-family);
+    margin-left: 0rem;
+    font-weight: 400;
+    color: var(--brown-color-800);
+    font-size: 1.45rem;
+}
+.nutrition p{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition td {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--stone-color-150);
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone-color-600);
+}
+
+.nutrition td.value {
+    color: var(--brown-color-800);
+    font-weight: 700;
+}
+@media (max-width: 375px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: block;             
+  }
+
+  .simple-omelette-recipe {
+    width: 100%;                 
+    margin: 0;                   
+    border-radius: 0;            
+  }
+
+  .omelette-photo {
+    margin: 0;                   
+  }
+
+  .omelette-photo img {
+    width: 100%;
+    border-radius: 0;           
+    display: block;
+  }
+  .omelette-beginning-text,
+  .ingerdients,
+  .instructions,
+  .nutrition {
+    width: 84%;
+    margin: 2rem auto;
+  }
+  .omelette-beginning-text h1 {
+    font-size: xx-large;
+    margin-left: 0;
+  }
+  .ingerdients,
+  .instructions,
+  .nutrition,
+  .omelette-beginning-text p {
+    font-size: 1.6rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .preparation-time{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1440px){
+    body{
+        height: auto;
+        width: auto;
+    }
+}
